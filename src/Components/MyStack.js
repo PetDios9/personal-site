@@ -15,19 +15,19 @@ export const MyStack = () => {
                 </Typography>
             </Grid>
             <Grid item xs={12} sm={4}>
-                <img src={reactlogo}  />
+                <img src={reactlogo} alt="React.js Logo"  />
             </Grid>
             <Grid item xs={12} sm={4}>
-                <img src={nodelogo}  />
+                <img src={nodelogo} alt="Node.js Logo"  />
             </Grid>
             <Grid item xs={12} sm={4}>
-                <img src={mongodblogo} />
+                <img src={mongodblogo} alt="MongoDB Logo" />
             </Grid>
             <Grid item xs={12} sm={6}>
-                <img src={javascriptlogo} />
+                <img src={javascriptlogo} alt="Javascript Logo" />
             </Grid>
             <Grid item xs={12} sm={6}>
-                <img src={expresslogo} />
+                <img src={expresslogo} alt="Express.js Logo" />
             </Grid>
     </Grid>
     )
