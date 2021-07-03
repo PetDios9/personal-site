@@ -1,33 +1,32 @@
 import { AppBar, Toolbar, makeStyles, Typography, Grid, } from "@material-ui/core";
-import { red } from '@material-ui/core/colors'
 
 const useStyles = makeStyles(theme => ({
     toolbar: {
-        minHeight: 100,
+        minHeight: 90,
         display: 'flex',
         justifyContent: 'center',
         backgroundColor: 'white',
-        color: red[500],
+        color: 'black',
     },
     links: {
         textDecoration: 'none',
-        color: red[500]
+        color: 'black'
     }
 }))
 
 export const Header = () => {
     const classes = useStyles()
     return (
-        <AppBar elevation={0} position="absolute" className={classes.toolbar} >
+        <AppBar elevation={0} position="sticky" className={classes.toolbar} >
             <Toolbar >
                <Grid container justify="space-between" direction="row" spacing={0}>
-                   <Grid item>
+                   <Grid item xs={12} sm={3}>
                         <Typography variant="h6">
                             Peter Diosdado
                         </Typography>
                    </Grid>
                    <Grid item>
-                       <Grid container justify="center" direction="row" spacing={6}>
+                       <Grid container justify="center" direction="row" spacing={4}>
                             <Grid item>
                                 <Typography variant="h6" >
                                     About
@@ -40,7 +39,7 @@ export const Header = () => {
                            </Grid>
                            <Grid item>
                                 <Typography variant="h6">
-                                <a target="_blank" rel="noopener noreferrer" href="http://linkedin.com/in/peter-diosdado" className={classes.links}>LinkedIn</a>
+                                    <a target="_blank" rel="noopener noreferrer" href="http://linkedin.com/in/peter-diosdado" className={classes.links}>LinkedIn</a>
                                 </Typography>
                            </Grid>
                            <Grid item>

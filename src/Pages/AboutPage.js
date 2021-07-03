@@ -1,43 +1,66 @@
-import { Grid, makeStyles, Typography } from '@material-ui/core'
-import React from 'react'
-import peter from '../peter.jpg'
-
-const useStyles = makeStyles(theme => ({
-    peter : {
-        // backgroundImage: `url(${peter})`,
-        background: `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('${peter}')`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        width: '100vw',
+import { Grid, makeStyles, Typography, Button } from '@material-ui/core'
+import { AboutText } from '../Components/AboutText'
+import { MyStack } from '../Components/MyStack'
+import { grey } from '@material-ui/core/colors'
+import React, {useState} from 'react'
+const useStyles = makeStyles(theme=> ({
+    root: {
+        backgroundColor: grey[900] ,
+        width: '100%',
+        height: '100%',
+        color: 'white ',
+        overflowX: 'hidden'
+    },
+    container: {
         height: '100vh',
-        
+        width: '100vw',
+        padding: 60
     },
-    textContainer: {
-        height: "90vh",
-        width: "90vw",
-        color: 'white'
+    aboutButtons :{
+        paddingLeft: '20px'
     },
+    images: {
+        height: '200px',
+        width: '100px'
+    }
 }))
-
-const AboutPage = () => {
+export const AboutPage = () => {
+    const [pressedButton, setPressedButton] = useState('about')
     const classes = useStyles()
+    let renderedComponent 
+    switch(pressedButton) {
+        case 'about':
+            renderedComponent = <AboutText />
+            break
+        case 'myStack':
+            renderedComponent = <MyStack />
+            break
+    }
     return(
-        <Grid container alignItems="center" justify="center" className={classes.peter}>
-            <Grid container className={classes.textContainer} direction="column" alignItems="center" justify="center">
-                <Grid item>
-                    <Typography variant="h3">
-                        Hello, World! My name is Peter Diosdado!
-                    </Typography>
+        <div className={classes.root}>
+            <Grid container direction="row" alignItems="center" className={classes.container} >
+                <Grid item sm={6} className={classes.aboutButtons}>
+                    <Grid container direction="column" justify='flex-end'>
+                        <Grid item>
+                            <Button size="large" color="primary" onClick={() => setPressedButton('about')}>
+                               <Typography variant="h4">
+                                   About
+                               </Typography>
+                            </Button>
+                        </Grid>
+                        <Grid item>
+                            <Button size="large" color="primary" onClick={() => setPressedButton('myStack')}>
+                                <Typography variant="h4">
+                                   My Stack
+                                </Typography>
+                            </Button>
+                        </Grid>
+                    </Grid>
                 </Grid>
-                <Grid item>
-                    <Typography variant="h6">
-                        Junior Software Developer!
-                    </Typography>
+                <Grid item sm={6}>
+                    {renderedComponent}
                 </Grid>
             </Grid>
-        </Grid>
+        </div>
     )
 }
-
-export default AboutPage
