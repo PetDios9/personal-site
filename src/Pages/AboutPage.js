@@ -1,8 +1,9 @@
+import React, {useState} from 'react'
 import { Grid, makeStyles, Typography, Button } from '@material-ui/core'
 import { AboutText } from '../Components/AboutText'
 import { MyStack } from '../Components/MyStack'
 import { grey } from '@material-ui/core/colors'
-import React, {useState} from 'react'
+import { NavHashLink } from 'react-router-hash-link'
 const useStyles = makeStyles(theme=> ({
     root: {
         backgroundColor: grey[900] ,
@@ -41,6 +42,7 @@ export const AboutPage = () => {
             break
     }
     return(
+        <NavHashLink >
         <div className={classes.root}>
             <Grid container direction="row" alignItems="center" className={classes.container} >
                 <Grid item sm={6} className={classes.aboutButtons}>
@@ -48,7 +50,7 @@ export const AboutPage = () => {
                         <Grid item>
                             <Button size="large" color="primary" onClick={() => setPressedButton('about')}>
                                <Typography variant="h4">
-                                   About
+                                   About Me
                                </Typography>
                             </Button>
                         </Grid>
@@ -66,5 +68,6 @@ export const AboutPage = () => {
                 </Grid>
             </Grid>
         </div>
+        </NavHashLink>
     )
 }
