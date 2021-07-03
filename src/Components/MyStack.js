@@ -8,7 +8,7 @@ import expresslogo from '../images/expresslogo.png'
 
 export const MyStack = () => {
     return(
-        <Grid container spacing={2} direction="row" alignItems="center" justify="flex-start">
+        <Grid container spacing={1} direction="row" alignItems="center" justify="flex-start" styling={{overflowx: 'hidden', overflowy: 'hidden'}}>
             <Grid item xs={12}>
                 <Typography variant='subtitle1'>
                     Here are some frameworks and technologies that I work with in my projects!

@@ -8,7 +8,7 @@ import { ThemeProvider} from '@material-ui/core'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{overflowX: 'hidden'}}>
       <ThemeProvider theme={theme}>
         <Header />
           <LandingPage />

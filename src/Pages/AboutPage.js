@@ -9,8 +9,6 @@ const useStyles = makeStyles(theme=> ({
         width: '100%',
         height: '100%',
         color: 'white ',
-        //overflowx hidden for horizontal scroll bar bug in material ui
-        overflowX: 'hidden'
     },
     container: {
         height: '100vh',

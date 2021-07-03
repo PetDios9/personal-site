@@ -17,34 +17,19 @@ const useStyles = makeStyles(theme => ({
 export const Header = () => {
     const classes = useStyles()
     return (
-        <AppBar elevation={0} position="sticky" className={classes.toolbar} >
-            <Toolbar >
+        <AppBar elevation={0} position="fixed" className={classes.toolbar} >
+            <Toolbar spacing>
                <Grid container justify="space-between" direction="row" spacing={0}>
-                   <Grid item xs={12} sm={3}>
-                        <Typography variant="h6">
+                   <Grid item xs={6} sm={6}>
+                        <Typography variant="h6" align="left">
                             Peter Diosdado
                         </Typography>
                    </Grid>
                    <Grid item>
-                       <Grid container justify="center" direction="row" spacing={4}>
-                            <Grid item>
-                                <Typography variant="h6" >
-                                    About
-                                </Typography>
-                            </Grid>
-                           <Grid item>
-                                <Typography variant="h6" >
-                                    Resume
-                                </Typography>
-                           </Grid>
+                       <Grid container justify="center" alignItems="center" direction="row" spacing={4}>
                            <Grid item>
                                 <Typography variant="h6">
                                     <a target="_blank" rel="noopener noreferrer" href="http://linkedin.com/in/peter-diosdado" className={classes.links}>LinkedIn</a>
-                                </Typography>
-                           </Grid>
-                           <Grid item>
-                                <Typography variant="h6" >
-                                    Contact
                                 </Typography>
                            </Grid>
                        </Grid>
