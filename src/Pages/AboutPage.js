@@ -42,7 +42,6 @@ export const AboutPage = () => {
             break
     }
     return(
-        <NavHashLink >
         <div className={classes.root}>
             <Grid container direction="row" alignItems="center" className={classes.container} >
                 <Grid item sm={6} className={classes.aboutButtons}>
@@ -68,6 +67,5 @@ export const AboutPage = () => {
                 </Grid>
             </Grid>
         </div>
-        </NavHashLink>
     )
 }
