@@ -20,7 +20,7 @@ export const Header = () => {
         <AppBar elevation={0} position="fixed" className={classes.toolbar} >
             <Toolbar spacing>
                <Grid container justify="space-between" direction="row" spacing={0}>
-                   <Grid item xs={6} sm={6}>
+                   <Grid item xs={6}>
                         <Typography variant="h6" align="left">
                             Peter Diosdado
                         </Typography>

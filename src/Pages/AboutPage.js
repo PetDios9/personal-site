@@ -41,7 +41,7 @@ export const AboutPage = () => {
     return(
         <div className={classes.root}>
             <Grid container direction="row" alignItems="center" className={classes.container} >
-                <Grid item sm={6} className={classes.aboutButtons}>
+                <Grid item xs={12} sm={6} className={classes.aboutButtons}>
                     <Grid container direction="column" justify='flex-end'>
                         <Grid item>
                             <Button size="large" color="primary" onClick={() => setPressedButton('about')}>
