@@ -3,7 +3,6 @@ import { Grid, makeStyles, Typography, Button } from '@material-ui/core'
 import { AboutText } from '../Components/AboutText'
 import { MyStack } from '../Components/MyStack'
 import { grey } from '@material-ui/core/colors'
-import { NavHashLink } from 'react-router-hash-link'
 const useStyles = makeStyles(theme=> ({
     root: {
         backgroundColor: grey[900] ,
