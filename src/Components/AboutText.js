@@ -3,7 +3,8 @@ import {Typography } from '@material-ui/core'
 
 export const AboutText = () => {
     return(
-        <Typography variant="body1" align="left">
+        <Typography variant="body1" align="center">
+            <br />
             I am 26 years old and a self taught Web Developer! 
                 <br />
                 <br />

@@ -9,14 +9,12 @@ const useStyles = makeStyles(theme=> ({
         width: '100%',
         height: '100%',
         color: 'white ',
+        overflowY: 'hidden'
     },
     container: {
         height: '100vh',
         width: '100vw',
         padding: 60
-    },
-    aboutButtons :{
-        paddingLeft: '20px'
     },
     images: {
         height: '200px',
@@ -40,8 +38,9 @@ export const AboutPage = () => {
     }
     return(
         <div className={classes.root}>
-            <Grid container direction="row" alignItems="center" className={classes.container} >
-                <Grid item xs={12} sm={6} className={classes.aboutButtons}>
+            <Grid container direction="row" alignItems="center" className={classes.container}>
+                {/* buttons container */}
+                <Grid item xs={12} sm={6}>
                     <Grid container direction="column" justify='flex-end'>
                         <Grid item>
                             <Button size="large" color="primary" onClick={() => setPressedButton('about')}>
@@ -50,7 +49,7 @@ export const AboutPage = () => {
                                </Typography>
                             </Button>
                         </Grid>
-                        <Grid item>
+                        <Grid item xs={12}>
                             <Button size="large" color="primary" onClick={() => setPressedButton('myStack')}>
                                 <Typography variant="h4">
                                    My Stack
@@ -59,7 +58,8 @@ export const AboutPage = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item sm={6}>
+                {/*rendered component container */}
+                <Grid item xs={12} sm={6}>
                     {renderedComponent}
                 </Grid>
             </Grid>

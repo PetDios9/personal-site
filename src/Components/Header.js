@@ -18,8 +18,8 @@ export const Header = () => {
     const classes = useStyles()
     return (
         <AppBar elevation={0} position="fixed" className={classes.toolbar} >
-            <Toolbar spacing>
-               <Grid container justify="space-between" direction="row" spacing={0}>
+            <Toolbar>
+               <Grid container justify="space-between" direction="row">
                    <Grid item xs={6}>
                         <Typography variant="h6" align="left">
                             Peter Diosdado

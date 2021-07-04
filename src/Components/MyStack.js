@@ -8,25 +8,26 @@ import expresslogo from '../images/expresslogo.png'
 
 export const MyStack = () => {
     return(
-        <Grid container spacing={0} direction="row" alignItems="center" justify="flex-start" styling={{overflowx: 'hidden', overflowy: 'hidden'}}>
+        <Grid container direction="row" alignItems="center" justify="flex-start" styling={{overflowX: 'hidden',}}>
             <Grid item xs={12}>
-                <Typography variant='subtitle1'>
+                <Typography variant='body1' paragraph="true" >
+                    <br />
                     Here are some frameworks and technologies that I work with in my projects!
                 </Typography>
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={12} md={12} lg={4}>
                 <img src={reactlogo} alt="React.js Logo"  />
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={8} md={6} lg={4}>
                 <img src={nodelogo} alt="Node.js Logo"  />
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={4} md={6} lg={4}>
                 <img src={mongodblogo} alt="MongoDB Logo" />
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={6} md={6} lg={6}>
                 <img src={javascriptlogo} alt="Javascript Logo" />
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={6} md={6} lg={6}>
                 <img src={expresslogo} alt="Express.js Logo" />
             </Grid>
     </Grid>
