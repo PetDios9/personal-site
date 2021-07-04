@@ -1,16 +1,19 @@
 import React from 'react'
-import {Typography } from '@material-ui/core'
+import {Typography, Grid } from '@material-ui/core'
 
 export const AboutText = () => {
     return(
-        <Typography variant="body1" align="center">
-            <br />
-            I am 26 years old and a self taught Web Developer! 
-                <br />
-                <br />
-            I began teaching myself web development at the beginning of 2020 by learning how to work with HTML and CSS, and over the pandemic learned more technologies while also working full time. 
-            I am very open minded, forward thinking, and excited to learn more technologies in the ever evolving web development world.
-            Reach out to me by clicking the Indeed link in the banner. I'm excited to hear from you! :-)
-        </Typography>
+        <Grid container direction="row" alignItems="center" justify="center" style={{padding: 20}}>
+            <Grid item xs={12}>
+                <Typography variant="body1" align="center" paragraph={true}>
+                    I am 26 years old and a self taught Web Developer! 
+                        <br />
+                        <br />
+                    I began teaching myself web development at the beginning of 2020 by learning how to work with HTML and CSS, and over the pandemic learned more technologies while also working full time. 
+                    I am very open minded, forward thinking, and excited to learn more technologies in the ever evolving web development world.
+                    Reach out to me by clicking the Indeed link in the banner. I'm excited to hear from you! :-)
+                </Typography>
+            </Grid>
+        </Grid>
     )
 }

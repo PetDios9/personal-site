@@ -6,20 +6,14 @@ import { grey } from '@material-ui/core/colors'
 const useStyles = makeStyles(theme=> ({
     root: {
         backgroundColor: grey[900] ,
-        width: '100%',
-        height: '100%',
+        width: '100vw',
+        height: '100vh',
         color: 'white ',
-        
     },
     container: {
-        height: '100vh',
-        width: '100vw',
-        padding: 60
+        height: '100%',
+        width: '100%'
     },
-    images: {
-        height: '200px',
-        width: '100px'
-    }
 }))
 export const AboutPage = () => {
     const [pressedButton, setPressedButton] = useState('about')
@@ -38,11 +32,11 @@ export const AboutPage = () => {
     }
     return(
         <div className={classes.root}>
-            <Grid container direction="row" alignItems="center" className={classes.container}>
+            <Grid container direction="row" justify="space-around" alignItems="center" className={classes.container}>
                 {/* buttons container */}
                 <Grid item xs={12} sm={6}>
-                    <Grid container direction="column" justify='flex-end'>
-                        <Grid item>
+                    <Grid container direction="row" alignItems="center" justify='center'>
+                        <Grid item xs={12}>
                             <Button size="large" color="primary" onClick={() => setPressedButton('about')}>
                                <Typography variant="h4">
                                    About Me
