@@ -9,6 +9,8 @@ const useStyles = makeStyles(theme=> ({
         width: '100vw',
         height: '100vh',
         color: 'white ',
+        overflowY: 'hidden',
+        overflowX: 'hidden'
     },
     container: {
         height: '100%',
