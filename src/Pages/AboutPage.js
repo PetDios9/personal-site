@@ -32,19 +32,19 @@ export const AboutPage = () => {
     }
     return(
         <div className={classes.root}>
-            <Grid container direction="row" justify="space-around" alignItems="center" className={classes.container}>
+            <Grid container direction="row" alignItems="center" className={classes.container}>
                 {/* buttons container */}
                 <Grid item xs={12} sm={6}>
-                    <Grid container direction="row" alignItems="center" justify='center'>
+                    <Grid container direction="row" alignItems="center" justify='center' spacing={2}>
                         <Grid item xs={12}>
-                            <Button size="large" color="primary" onClick={() => setPressedButton('about')}>
+                            <Button variant="outlined" size="large" color="primary" onClick={() => setPressedButton('about')}>
                                <Typography variant="h4">
                                    About Me
                                </Typography>
                             </Button>
                         </Grid>
                         <Grid item xs={12}>
-                            <Button size="large" color="primary" onClick={() => setPressedButton('myStack')}>
+                            <Button size="large" color="primary"  variant="outlined" onClick={() => setPressedButton('myStack')}>
                                 <Typography variant="h4">
                                    My Stack
                                 </Typography>
