@@ -4,6 +4,7 @@ import {AboutPage} from './Pages/AboutPage'
 import LandingPage from './Pages/LandingPage'
 import theme from './theme';
 import { ThemeProvider} from '@material-ui/core'
+import { ContactMePage } from './Pages/ContactMePage';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Header />
           <LandingPage />
           <AboutPage />
+          <ContactMePage />
       </ThemeProvider>
     </div>
   );

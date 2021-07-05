@@ -1,6 +1,6 @@
 import { Grid, makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
-import peter from '../peter.jpg'
+import peter from '../images/peter.jpg'
 
 const useStyles = makeStyles(theme => ({
     root : {
@@ -31,8 +31,8 @@ const LandingPage = () => {
                     </Typography>
                 </Grid>
                 <Grid item>
-                    <Typography variant="h6">
-                        Junior Software Developer 
+                    <Typography variant="h4">
+                        Full Stack Software Developer 
                     </Typography>
                 </Grid>
             </Grid>

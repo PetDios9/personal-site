@@ -8,8 +8,8 @@ import expresslogo from '../images/expresslogo.png'
 export const MyStack = () => {
     return(
         <Grid container direction="row" justify="center" alignItems="center" alignContent="center" >
-            <Grid item xs={12}>
-                <Typography variant='body1' paragraph={true} align="center" >
+            <Grid item xs={12} >
+                <Typography variant='body1' paragraph={true} align="center">
                     <br />
                     Here are some frameworks and technologies that I work with in my projects!
                 </Typography>
