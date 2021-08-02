@@ -29,7 +29,7 @@ export const Header = () => {
                        <Grid container justify="center" alignItems="center" direction="row" spacing={4}>
                            <Grid item>
                                 <Typography variant="h6">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1Ut1DQHfbdoAjrUZ_E7Xii3fZmX_9sCi4V0v-LiuAEis/edit?usp=sharing" className={classes.links}>Resume</a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1D6aNecTOwlf2Rj4iqFFY6eA7uW7U5TOr/view?usp=sharing" className={classes.links}>Resume</a>
                                 </Typography>
                            </Grid>
                        </Grid>

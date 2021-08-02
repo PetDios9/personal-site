@@ -6,11 +6,11 @@ import { grey } from '@material-ui/core/colors'
 const useStyles = makeStyles(theme=> ({
     root: {
         backgroundColor: grey[900] ,
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        height: '88vh',
         color: 'white ',
         overflowY: 'hidden',
-        overflowX: 'hidden'
+        overflowX: 'hidden',
     },
     container: {
         height: '100%',
@@ -55,7 +55,7 @@ export const AboutPage = () => {
                     </Grid>
                 </Grid>
                 {/*rendered component container */}
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} >
                     {renderedComponent}
                 </Grid>
             </Grid>
