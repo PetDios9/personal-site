@@ -4,8 +4,8 @@ import {Typography, Grid } from '@material-ui/core'
 export const AboutText = () => {
     return(
         <Grid container direction="row" justify="flex-start" >
-            <Grid item xs={12}>
-                <Typography variant="body1" align="center" style={{padding: 50}} >
+            <Grid item xs={12} style={{padding: 20}}>
+                <Typography variant="body1" align="center" >
                     I am 26 years old and a self taught Software Engineer! 
                         <br />
                         <br />
