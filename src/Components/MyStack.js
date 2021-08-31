@@ -11,7 +11,7 @@ export const MyStack = () => {
             <Grid item xs={12} >
                 <Typography variant='body1' paragraph={true} align="center">
                     <br />
-                    Here are some frameworks and technologies that I work with in my projects!
+                    Here are some frameworks, libraries, and technologies that I work with in my projects!
                 </Typography>
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={4}>

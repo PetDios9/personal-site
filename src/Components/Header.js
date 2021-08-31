@@ -1,4 +1,5 @@
 import { AppBar, Toolbar, makeStyles, Typography, Grid, } from "@material-ui/core";
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles(theme => ({
     toolbar: {
@@ -29,8 +30,25 @@ export const Header = () => {
                        <Grid container justify="center" alignItems="center" direction="row" spacing={4}>
                            <Grid item>
                                 <Typography variant="h6">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1vgUEL-VXGlaaZIUbZxpCWHsOpsELxInV/view?usp=sharing" className={classes.links}>Resume</a>
+                                    <a 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    href="https://docs.google.com/document/d/1XcucKkU7TmTOF6ZJSPENtSkSc-TDFX0BBToZ5AVFRwI/edit?usp=sharing" 
+                                    className={classes.links}
+                                        >
+                                        Resume
+                                    </a>
                                 </Typography>
+                           </Grid>
+                           <Grid item>
+                           <a
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            href="https://github.com/petdios9" 
+                            className={classes.links}
+                                >
+                                <GitHubIcon />
+                            </a>
                            </Grid>
                        </Grid>
                    </Grid>
