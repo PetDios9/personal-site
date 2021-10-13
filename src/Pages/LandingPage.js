@@ -1,10 +1,10 @@
 import { Grid, makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
-import peter from '../images/peter.jpg'
+import coding from '../images/coding.jpg'
 
 const useStyles = makeStyles(theme => ({
     root : {
-        background: `linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5), rgba(33,33,33,1) 93%), url('${peter}')`,
+        background: `linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5), rgba(33,33,33,1) 93%), url('${coding}')`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
