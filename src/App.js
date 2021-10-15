@@ -5,18 +5,31 @@ import LandingPage from './Pages/LandingPage'
 import { ContactMePage } from './Pages/ContactMePage'
 import {Projects} from './Pages/Projects'
 import theme from './theme';
-import { ThemeProvider} from '@material-ui/core'
+import { CssBaseline, ThemeProvider} from '@material-ui/core'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 
 function App() {
+  useEffect(() => {
+    Aos.init({duration: 1500})
+  },[])
   return (
-    <div className="App" style={{overflowX: 'hidden'}}>
+    <div className="App" style={{overflow: 'hidden'}}>
       <ThemeProvider theme={theme}>
         <Header />
+          <CssBaseline />
           <LandingPage />
-          <AboutPage />
-          <Projects />
-          <ContactMePage />
+          <div data-aos="fade-down">
+            <AboutPage />
+          </div>
+          <div data-aos="fade-down">
+            <Projects />
+          </div>
+          <div data-aos="flip-right">
+            <ContactMePage />
+          </div>
       </ThemeProvider>
     </div>
   );
