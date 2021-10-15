@@ -27,7 +27,7 @@ function App() {
           <div data-aos="fade-down">
             <Projects />
           </div>
-          <div data-aos="flip-right">
+          <div data-aos="fade-down">
             <ContactMePage />
           </div>
       </ThemeProvider>
