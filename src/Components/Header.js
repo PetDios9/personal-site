@@ -33,7 +33,7 @@ export const Header = () => {
                                     <a 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
-                                    href="https://docs.google.com/document/d/1XcucKkU7TmTOF6ZJSPENtSkSc-TDFX0BBToZ5AVFRwI/edit?usp=sharing" 
+                                    href="https://drive.google.com/file/d/13ERuQVymclESy2UDhfmFI7Vm1Uknv8c1/view?usp=sharing" 
                                     className={classes.links}
                                         >
                                         Resume
