@@ -6,7 +6,7 @@ export const AboutText = () => {
         <Grid container direction="row" justify="flex-start" >
             <Grid item xs={12} style={{padding: 20}}>
                 <Typography variant="body1" align="center" >
-                    I am 26 years old and a self taught Software Engineer! 
+                   Self Taught Software Engineer! 
                         <br />
                         <br />
                     I began learning software development in the beginning of 2020 starting with basic HTML and CSS 
